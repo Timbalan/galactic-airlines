@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Galactic Tickets</title>
+	<link rel="shortcut icon" href="images/planet3.png" type="image/png">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-color: black;
+		}
+		p{
+			text-indent: 50px;
+		}
+		.name {
+			width: 25vw;
+		}
+		.h1{
+			text-indent: 45vw;
+			color: yellow;
+			font-family: 'Arial';
+			font-size: 50px;
+			position: absolute;
+			top: 1vw;
+			left: 3vw;
+
+		}
+		.h2{
+			text-indent: 50px;
+			color: yellow;
+			font-family: 'Arial';
+
+		}
+		.find {
+			text-indent: 45vw;
+		}
+		.textcolor {
+			color: yellow;
+			font-family: Arial;
+			font-size: 18px;
+		}
+
+		.btn {
+			position: relative;
+			padding: 15px 30px;
+			margin: 0 20px;
+			font-family: Arial;
+			font-size: 24px;
+			color: black;
+			font-weight: 600;
+			background: yellow;
+			border-width: 0;	
+			outline: none;
+			cursor: pointer;
+		}
+		.btn:before,
+		.btn:after{
+			content: "";
+			position: absolute;
+			height: 50%;
+			width: 100%;
+			background: yellow;
+			transition: .3s cubic-bezier(.75,.24,.01,.9);
+		}
+		.btn:before { 
+			top: 0;
+			right: -5px; 
+		}
+		.btn:after { 
+			bottom: 0;
+			left: -5px;  
+		}
+		.btn:hover:before {
+			transform: translateX(-5px);
+		}
+		.btn:hover:after {
+			transform: translateX(5px);
+		}
+		.btn2,
+		.btn2:before,
+		.btn2:after {
+			background: yellow;
+		}
+		.text {
+			position: relative;
+			z-index: 2;
+		}
+		.wordscw{
+      color: blue;
+      font-family: 'Arial';
+      font-size: 28px;
+      text-indent: 28px;
+      text-align: center;
+
+    }
+    
+		
+	</style>
+	<script type="text/javascript">
+	function Myfunction(txt1)
+	{
+		alert("Thank you for choosing our company :" + txt1);
+
+	}
+</script>
+</head>
+<body> 
+	
+	
+	<a href="index.html"><img class="name" src="images/name.png"></a>
+	<h1 class="h1">Galactic Tickets</h1>
+	<h2 class="h2">Booking service</h2>
+
+
+	<form action="" method="get">
+	<p><label class="textcolor" for='login'>First name</label>
+	<input id="inp" type="text" name="login">&nbsp;&nbsp;&nbsp;&nbsp;
+	<label class="textcolor" for='password'>Last name</label>
+	<input type="text" name="login">&nbsp;&nbsp;&nbsp;&nbsp;
+	<label class="textcolor" for='password'>Passport ID</label>
+	<input type="text" name="login"></p>
+	<hr>
+	
+	<p><label class="textcolor" for='news'> Form </label> 
+		<select name="classes">
+			<option value="new">-</option>
+		<option  class="" value="First"> Earth </option>
+		<option value="second"> Miller </option>
+		<option value="third"> Mars </option>
+		<option value="forth"> Pandora </option>
+		<option value="fivth"> Skarif </option>
+		<option value="sixth"> Mule </option>
+		<option value="seventh"> Alderaan </option>
+		<option value="eighth"> Ilum </option>
+		<option value="ninth"> Magrateya </option>
+		<option value="tenth"> Venera </option>
+	</select>
+	<label class="textcolor" for='news'> To </label> 
+		<select name="classes">
+			<option value="new">-</option>
+		<option value="First"> Earth </option>
+		<option value="first"> Miller </option>
+		<option value="first"> Mars </option>
+		<option value="First"> Pandora </option>
+		<option value="First"> Skarif </option>
+		<option value="First"> Mule </option>
+		<option value="First"> Alderaan </option>
+		<option value="First"> Ilum </option>
+		<option value="First"> Magrateya </option>
+		<option value="First"> Venera </option>
+	</select></p>
+	<hr>
+	
+
+	
+	<p><label class="textcolor" for='date'>Arrival Date</label>
+	<input type="date" name="date">&nbsp;&nbsp;&nbsp;&nbsp;
+	<label class="textcolor" for='number'>Depature date</label>
+	<input type="date" name="date"></p>
+	<hr>
+
+	<p><label class="textcolor" for='news'> Ticket classes </label> </p>
+		<p><select name="classes">
+			<option value="new">-</option>
+		<option value="First"> First class </option>
+		<option value="first"> Business class </option>
+		<option value="first"> Economic class </option>
+	</select></p>
+	<hr>
+
+	<p><label class="textcolor" for='number'> Phone number </label></p>
+	<p><input type="text" name="number"></p>
+	<p><label class="textcolor" for='number'> Email </label></p>
+	<p><input type="text" name="email"></p> 
+	
+	
+	<p><textarea name="tarea"> Comments for order </textarea>
+
+	<p class="find"><button class="btn" type="button" name="button" value="onclick" onclick="Myfunction(document.getElementById('inp').value);"><span class="text">Find Tickets</span></button></p>
+	<hr>
+	<p class="wordscw">This web site was created to fulfill Web Technologies module’s requirements and does not represent actual company or service.</p>
+	
+</body>
+</html>
